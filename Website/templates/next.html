@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>NEXT in queue</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/template_1.css') }}">
+</head>
+
+<body>
+   <div class="hada2">
+      {% extends "template.html" %}
+      {% block content %}
+
+      <h1>
+         NEXT is
+      </h1>
+
+      
+         <h2>
+            {{ next_name }}
+         </h2>
+      </ul>
+      <h2>
+         <a href={{ link }} target="_blank" rel="noopener noreferrer"> Trello </a>
+      </h2>
+      {% endblock %}
+   </div>
+</body>
+
+</html>
