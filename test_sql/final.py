@@ -3,6 +3,8 @@ import boto3, json, os, shutil, re
 import time
 import logging
 import pandas
+import tarfile
+import functools
 
 logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s',level=logging.DEBUG)
 
