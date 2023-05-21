@@ -5,7 +5,7 @@ import boto3, json
 # import time
 # import logging
 # import traceback
-
+# merge and update
 # refine_db = constants.REFINED_DATABASE_NAME
 # raw_db = constants.RAW_DATABASE_NAME
 
@@ -247,3 +247,4 @@ def add_new_columns(env, tb_details):
     print(update_cmd)
 
 add_new_columns('dev', {'schema': 'BEDROCK', 'table': 'AGENT_WORK'})
+# merge_and_update('dev', {'schema': 'BEDROCK', 'table': 'AGENT_WORK'})
